@@ -1,31 +1,30 @@
+"use client";
 import React from 'react'
-import Banner from '../components/Banner'
-import VertyVerySection from '../components/Vertyverysection'
-import AboutUsSection from '../components/AboutUsSection'
-import HealingSection from '../components/HealingSection'
-import Testimonials from '../components/Testimonials'
-import CoursesSlider from '../components/CoursesSlider'
-import HowItWorks from '../components/HowItWorks'
-import SelfDevelopment from '../components/SelfDevelopment'
-import BlogSection from '../components/BlogSection'
-import PodcastSection from '../components/PodcastSection'
-import BooksSection from '../components/BooksSection'
+import KannyContent from '../components/KannyContent'
+import AboutKenny from '../components/AboutKenny'
+import FolowersSocial from '../components/FolowersSocial'
+import KennyWeissStory from '../components/KennyWeissStory'
+import Inspiringyou from '../components/Inspiringyou';
+import CoursesSlider from '../components/CoursesSlider';
+import SuccessBooks from '../components/SuccessBooks';
+import HealTheHurtPodcast from '../components/HealTheHurtPodcast';
+import Testimonials from '../components/Testimonials';
+import WillAchieve from '../components/WillAchieve';
 
 export default function page() {
   return (
-    <div>
-     <Banner/>
-     <VertyVerySection/>
-     <AboutUsSection/>
-     <HealingSection/>
-     <Testimonials/>
+    <main className='pt-1'>
+     <KannyContent/>
+     <AboutKenny/>
+     <FolowersSocial/>
+     <KennyWeissStory/>
+     <Inspiringyou/>
      <CoursesSlider/>
-     <HowItWorks/>
-     <SelfDevelopment/>
-     <BlogSection/>
-     <PodcastSection/>
-     <BooksSection/>
-    </div>
+     <SuccessBooks/>
+     <HealTheHurtPodcast/>
+     <Testimonials/>
+     <WillAchieve/>
+    </main>
   )
 }
 

@@ -87,7 +87,7 @@ export default function CoursesSlider() {
               <div className="card">
                 <div className="card-img">
                   <a href="/courses.html">
-                    <Image src={item.image} alt="Course" width={500} height={300} className="preview" />
+                    <img src={item.image} alt="Course"  className="preview" />
                     <div className="rbt-badge-3">
                       <span>-50%</span> <span>Off</span>
                     </div>
@@ -118,7 +118,7 @@ export default function CoursesSlider() {
                   </div>
 
                   <div className="author">
-                    <Image src={item.authorImage} alt="Author" width={40} height={40} />
+                    <img src={item.authorImage} alt="Author"  />
                     <div className="author-info">Course • By Kenny Weiss</div>
                   </div>
 

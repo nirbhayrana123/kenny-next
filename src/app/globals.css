@@ -4200,7 +4200,7 @@ article.post {
     justify-content: center;
 }
 
-.flex-folowers i {
+.flex-folowers svg {
     font-size: 35px;
     color: #c09867;
 }
@@ -4479,7 +4479,15 @@ section.sourses-section .right-content h3 {
     max-width: 50em;
     color: #fff;
 }
-
+.hero-section
+ {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/laptop-meeting.jpg') center / cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5em 0em 2em;
+    position: relative;
+    margin-bottom: 50px;
+}
 .hero-section p {
     max-width: 43.75em;
     margin: 0 auto 1em;
@@ -4833,7 +4841,7 @@ a.learn-more-link:hover {
 .img2 {
     position: absolute;
     bottom: -30px;
-    right: -1em;
+    right: 0;
     z-index: 1;
     width: 300px;
 }
@@ -5261,7 +5269,7 @@ a.button.border-only:hover {
 }
 
 section.why-choose-us.bookssection .video-boxes {
-    right: -80px;
+    right: 0px;
 }
 
 .wordsendsicyel .form {

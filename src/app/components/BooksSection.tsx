@@ -12,10 +12,10 @@ export default function BooksSection() {
           {/* Left Side Images */}
           <div className="left-images">
             <div className="main-img">
-              <Image src="/images/books.webp" alt="Woman on computer" width={500} height={500} />
+              <img src="/images/books.webp" alt="Woman on computer" />
             </div>
             <div className="video-boxes">
-              <Image src="/images/books2.jpg" alt="Video thumbnail" width={500} height={300} />
+              <img src="/images/books2.jpg" alt="Video thumbnail"  />
               <a
                 id="play-video"
                 className="video-play-button"

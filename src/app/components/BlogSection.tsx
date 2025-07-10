@@ -62,7 +62,7 @@ export default function BlogSection() {
           {blogData.map((item, index) => (
             <div className="blog-post" key={index}>
               <div className="blog-img shine-effect">
-                <Image src={item.image} alt="Blog Post" width={500} height={300} />
+                <img src={item.image} alt="Blog Post"  />
               </div>
               <div className="card-content">
                 <div className="meta">

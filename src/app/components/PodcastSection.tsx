@@ -43,7 +43,7 @@ export default function PodcastSection() {
           </div>
 
           <div className="podcast-right shine-effect">
-            <Image src="/images/KEN-Podcast-1.webp" alt="Podcast" width={600} height={600} />
+            <img src="/images/KEN-Podcast-1.webp" alt="Podcast"/>
           </div>
         </div>
       </div>
