@@ -86,7 +86,7 @@ export default function CoursesSlider() {
             <SwiperSlide key={index}>
               <div className="card">
                 <div className="card-img">
-                  <a href="/courses.html">
+                  <a href="/courses">
                     <img src={item.image} alt="Course"  className="preview" />
                     <div className="rbt-badge-3">
                       <span>-50%</span> <span>Off</span>
@@ -127,7 +127,7 @@ export default function CoursesSlider() {
                       <span className="current-price">{item.price}</span>
                       <span className="original-price">{item.originalPrice}</span>
                     </div>
-                    <a href="/courses.html" className="learn-more-link">
+                    <a href="/courses" className="learn-more-link">
                       Learn More <FontAwesomeIcon icon={faArrowRight} />
                     </a>
                   </div>

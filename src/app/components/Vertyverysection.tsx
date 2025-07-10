@@ -111,7 +111,7 @@ export default function VertyVerySection() {
               And from there, start giving yourself the emotional safety and care you never got back then.
             </p>
             <h5>Because you're not broken. You're just unfinished. And that’s something you can change.</h5>
-            <a href="book-session.html" className="button">Start Healing What Was Left Unfinished</a>
+            <a href="/book-session" className="button">Start Healing What Was Left Unfinished</a>
           </div>
 
           <a href="#top0" className="read-more-btn" id="toggleBtn" onClick={handleToggle}>

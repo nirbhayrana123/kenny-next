@@ -2138,21 +2138,30 @@ a:hover {
 .form textarea {
     width: 100%;
     padding: 18px;
-    margin-bottom: 25px;
     border: 1px solid #cccccc73;
     border-radius: 5px;
     outline: none;
 }
-
+.flexsocial svg {
+    color: #000;
+}
+.mbres{
+ margin-bottom: 25px;
+ flex: 1;
+}
 .form .row {
     display: flex;
     gap: 10px;
 }
-
+.wordsendsicyel button.button {
+    margin-top: 18px;
+}
 .form .row input {
     flex: 1;
 }
-
+small.error {
+    color: #ff0000;
+}
 .info-box {
     background-color: #c09867;
     color: #fff;
@@ -2544,7 +2553,7 @@ section.bg-colors {
     padding-bottom: 8px;
 }
 
-f .step.active .step-number {
+ .step.active .step-number {
     background-color: #5e7130;
     color: #ffffff;
 }
@@ -2564,7 +2573,27 @@ f .step.active .step-number {
 
 
 
+.cta-box:has(.step.active) {
+    background-color: #917a5a;
+}
 
+.cta-box:has(.step.active) h3,
+.cta-box:has(.step.active) p,
+.cta-box:has(.step.active).cta-box small {
+    color: #ffffff;
+}
+
+.cta-box .step {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.cta-box:has(.step.active) .button {
+    box-shadow: 360px 0 0 0 #ffffff inset;
+    background-color: #ffffff00;
+    border: 1px solid #fff;
+    color: #000000;
+}
 
 .step h4 {
     margin-bottom: 10px;
@@ -5371,10 +5400,28 @@ section.why-choose-us.bookssection .video-boxes {
 }
 
 .wordsendsicyel button.button {
-    margin-top: 0;
+    margin-top: 18px;
 }
 
 /*********************Mobile styles ************************/
+
+@media (max-width: 1350px) {
+ul.navmenu { 
+    gap: 20px;
+    width: 54%;  
+}
+ul.navmenu li a {
+    font-size: .6em;
+}
+
+
+section.banner { 
+    height: auto; 
+    padding: 84px 0px;
+}
+
+}
+
 @media (max-width: 1200px) {
 
     .flexwordsendcycal {
@@ -5440,23 +5487,23 @@ section.why-choose-us.bookssection .video-boxes {
         justify-content: center;
     }
 
-    button.menu-toggle i {
+    button.menu-toggle svg {
         font-size: 40px;
         color: #ffffff;
         transition: 0.5s;
         position: absolute;
     }
 
-    button.menu-toggle i.close {
+    button.menu-toggle svg.close {
         color: #000;
         scale: 0;
     }
 
-    .navbars.openmenu i.open {
+    .navbars.openmenu svg.open {
         scale: 0;
     }
 
-    .navbars.openmenu i.close {
+    .navbars.openmenu svg.close {
         scale: 1.1;
     }
 
@@ -5474,7 +5521,7 @@ section.why-choose-us.bookssection .video-boxes {
         color: #000;
     }
 
-    .header.bgcolor .topbar button.menu-toggle i {
+    .header.bgcolor .topbar button.menu-toggle svg {
         color: #000;
     }
 
@@ -5482,7 +5529,7 @@ section.why-choose-us.bookssection .video-boxes {
         filter: brightness(0) saturate(100%);
     }
 
-    .navbars.openmenu .logo i {
+    .navbars.openmenu .logo svg {
         color: #000;
     }
 
@@ -5515,22 +5562,6 @@ section.why-choose-us.bookssection .video-boxes {
         grid-template-columns: 1fr;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1024px) {
     body {
@@ -5692,7 +5723,7 @@ section.why-choose-us.bookssection .video-boxes {
         right: 0;
     }
 
-    button.menu-toggle i {
+    button.menu-toggle svg {
         font-size: 2em;
     }
 
@@ -6043,4 +6074,21 @@ section.why-choose-us.bookssection .video-boxes {
 
 
 
+}
+
+
+
+@media (max-width: 550px) {
+.banner-content h1 { 
+    font-size: 2.5em; 
+}
+ .bannerflex {
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+
+.button-row {
+    justify-content: center;
+}
 }

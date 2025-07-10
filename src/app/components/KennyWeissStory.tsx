@@ -48,7 +48,7 @@ export default function KennyWeissStory() {
                             </div>
                         </div>
 
-                        <a href="book-session.html" className="button">Book a meeting with kenny</a>
+                        <a href="/book-session" className="button">Book a meeting with kenny</a>
                     </div>
                 </div>
                 <div className="business-coach">

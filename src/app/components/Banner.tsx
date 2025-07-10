@@ -12,8 +12,8 @@ export default function Banner() {
                         <p>Let me show you the way to stop your emotional
                             misery.</p>
                         <div className="button-row">
-                            <a className="button" href="courses.html">Explore courses</a>
-                            <a className="button whitebt" href="book-session.html">Book a meeting with kenny</a>
+                            <a className="button" href="courses">Explore courses</a>
+                            <a className="button whitebt" href="/book-session">Book a meeting with kenny</a>
                         </div>
 
                         <p className="people">Trusted by 4,000+ people</p>

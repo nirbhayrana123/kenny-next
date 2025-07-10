@@ -4,55 +4,36 @@ import React, { useEffect, useRef } from "react";
 export default function HowItWorks() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
- useEffect(() => {
-  const section = sectionRef.current;
-  if (!section) return;
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
 
-  const steps = section.querySelectorAll(".step") as NodeListOf<HTMLElement>;
-  if (!steps || steps.length === 0) return;
+    const steps = section.querySelectorAll(".step") as NodeListOf<HTMLElement>;
 
-  let isInView = false;
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const scrollMiddle = scrollTop + windowHeight / 2;
 
-  const handleScroll = () => {
-    if (!isInView) return;
+      steps.forEach((step) => {
+        const rect = step.getBoundingClientRect();
+        const offsetTop = scrollTop + rect.top;
+        const offsetBottom = offsetTop + step.offsetHeight;
 
-    const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const scrollMiddle = scrollTop + windowHeight / 2;
+        if (scrollMiddle >= offsetTop && scrollMiddle < offsetBottom) {
+          steps.forEach((s) => s.classList.remove("active"));
+          step.classList.add("active");
+        }
+      });
+    };
 
-    steps.forEach((step) => {
-      const offsetTop = step.offsetTop;
-      const offsetBottom = offsetTop + step.offsetHeight;
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Trigger once on load
 
-      if (scrollMiddle >= offsetTop && scrollMiddle < offsetBottom) {
-        steps.forEach((s) => s.classList.remove("active"));
-        step.classList.add("active");
-      }
-    });
-  };
-
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      isInView = entry.isIntersecting;
-      if (isInView) {
-        window.addEventListener("scroll", handleScroll);
-        handleScroll(); // trigger once when section appears
-      } else {
-        window.removeEventListener("scroll", handleScroll);
-      }
-    },
-    {
-      threshold: 0.2,
-    }
-  );
-
-  observer.observe(section);
-
-  return () => {
-    observer.disconnect();
-    window.removeEventListener("scroll", handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section className="paddings" ref={sectionRef}>
@@ -77,13 +58,15 @@ export default function HowItWorks() {
                 I’m not going to Alderaan. I’ve got to <a href="#">go home</a>.
               </p>
               <div className="button-row">
-                <a className="button" href="book-session.html">
+                <a className="button" href="/book-session">
                   Let’s talk
                 </a>
               </div>
+              <div className="step">
               <small>
                 All queries are replied within <u>24hrs</u>.
               </small>
+              </div>
             </div>
           </div>
 

@@ -8,7 +8,7 @@ export default function Inspiringyou() {
                 <h3>Inspiring you to take bold action and<br/> achieve extraordinary success</h3>
                 <p>Ullamcorper nec purus nunc viverra conubia interdum mollis consectetur mauris turpis. Ligula natoque
                     id vel lectus tempus diam nibh vulputate vitae.</p>
-                <a href="book-session.html" className="button whitebt">Book a meeting with kenny</a>
+                <a href="/book-session" className="button whitebt">Book a meeting with kenny</a>
 
                 <div className="client-logos">
                     <img src="images/Brand-1-1.png" alt="IDEAGITA"/>
