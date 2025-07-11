@@ -64,10 +64,10 @@ export default function HealingSection() {
         <div className="swiper emotional-swiper">
           <div className="swiper-wrapper">
             {[
-              { img: '/images/7.jpg', title: 'Childhood trauma' },
-              { img: '/images/15.jpg', title: 'Relationship issues' },
-              { img: '/images/add.jpg', title: 'Parenting issues' },
-              { img: '/images/8.jpg', title: 'Set the boundaries' },
+              { img: '/images/7.jpg', title: 'Childhood trauma', url:'/childhood-trauma' },
+              { img: '/images/15.jpg', title: 'Relationship issues', url:'/relationship-issues' },
+              { img: '/images/add.jpg', title: 'Parenting issues', url:'/parenting-issues' },
+              { img: '/images/8.jpg', title: 'Set the boundaries', url:'/set-boundaries' },
             ].map((item, index) => (
               <div className="swiper-slide" key={index}>
                 <div className="wellness-col bb-1">
@@ -80,7 +80,7 @@ export default function HealingSection() {
                       He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of
                       a process known as The Worst Day Cycle...
                     </p>
-                    <a className="learn-more-link" href="/childhood-trauma">Read more</a>
+                    <a className="learn-more-link" href={item.url}>Read more</a>
                   </div>
                 </div>
               </div>
