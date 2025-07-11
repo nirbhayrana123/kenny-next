@@ -27,6 +27,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Journey to Emotional Authenticity | Emotional Authenticity Coach",
   description: "",
+    icons: {
+    icon: '/favicon.ico',
+  },
+
 };
 
 export default function RootLayout({

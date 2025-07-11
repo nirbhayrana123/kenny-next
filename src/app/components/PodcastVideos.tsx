@@ -19,7 +19,8 @@ const videoItems = [
 ]
 
 const PodcastVideos = () => {
-  const [playedIndex, setPlayedIndex] = useState(null)
+const [playedIndex, setPlayedIndex] = useState<number | null>(null)
+
 
   return (
     <section className="podcastvideos">
