@@ -6002,7 +6002,9 @@ section.banner {
         height: auto;
         text-align: center;
     }
-
+.logos-people {
+    justify-content: center;
+}
 .button-row {
     justify-content: center;
 }
