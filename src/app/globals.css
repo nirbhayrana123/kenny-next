@@ -5320,6 +5320,24 @@ section.why-choose-us.bookssection .video-boxes {
 }
 
 /*********************Mobile styles ************************/
+
+@media (max-width: 1350px) {
+ul.navmenu { 
+    gap: 20px;
+    width: 54%;  
+}
+ul.navmenu li a {
+    font-size: .6em;
+}
+
+
+section.banner { 
+    height: auto; 
+    padding: 84px 0px;
+}
+
+}
+
 @media (max-width: 1200px) {
 
     .flexwordsendcycal {
@@ -5385,23 +5403,23 @@ section.why-choose-us.bookssection .video-boxes {
         justify-content: center;
     }
 
-    button.menu-toggle i {
+    button.menu-toggle svg {
         font-size: 40px;
         color: #ffffff;
         transition: 0.5s;
         position: absolute;
     }
 
-    button.menu-toggle i.close {
+    button.menu-toggle svg.close {
         color: #000;
         scale: 0;
     }
 
-    .navbars.openmenu i.open {
+    .navbars.openmenu svg.open {
         scale: 0;
     }
 
-    .navbars.openmenu i.close {
+    .navbars.openmenu svg.close {
         scale: 1.1;
     }
 
@@ -5419,7 +5437,7 @@ section.why-choose-us.bookssection .video-boxes {
         color: #000;
     }
 
-    .header.bgcolor .topbar button.menu-toggle i {
+    .header.bgcolor .topbar button.menu-toggle svg {
         color: #000;
     }
 
@@ -5427,7 +5445,7 @@ section.why-choose-us.bookssection .video-boxes {
         filter: brightness(0) saturate(100%);
     }
 
-    .navbars.openmenu .logo i {
+    .navbars.openmenu .logo svg {
         color: #000;
     }
 
@@ -5460,22 +5478,6 @@ section.why-choose-us.bookssection .video-boxes {
     grid-template-columns: 1fr;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1024px) {
     body {
@@ -5637,7 +5639,7 @@ section.why-choose-us.bookssection .video-boxes {
         right: 0;
     }
 
-    button.menu-toggle i {
+    button.menu-toggle svg {
         font-size: 2em;
     }
 
@@ -5987,4 +5989,21 @@ section.why-choose-us.bookssection .video-boxes {
 
 
 
+}
+
+
+
+@media (max-width: 550px) {
+.banner-content h1 { 
+    font-size: 2.5em; 
+}
+ .bannerflex {
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+
+.button-row {
+    justify-content: center;
+}
 }
