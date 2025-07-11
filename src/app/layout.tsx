@@ -25,7 +25,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Kenny Wiess",
+  title: "Journey to Emotional Authenticity | Emotional Authenticity Coach",
   description: "",
 };
 

@@ -95,12 +95,6 @@ a {
     font-weight: 400;
 }
 
-
-
-
-
-
-
 .header.bgcolor ul.navmenu a {
     color: #000000;
 }
@@ -152,7 +146,6 @@ a.logo-brand {
 
 .container {
     max-width: 1380px;
-    /* max-width: 1270px; */
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -166,31 +159,33 @@ header.header.blacktext ul.navmenu li a {
 }
 
 @media (max-width: 1300px) {
- .container {
+    .container {
         max-width: 1170px;
         padding: 20px;
-      }
+    }
 }
 
 @media (max-width: 1024px) {
-      .container {
+    .container {
         max-width: 900px;
         padding: 20px;
-      }
     }
+}
 
-    @media (max-width: 768px) {
-      .container {
+@media (max-width: 768px) {
+    .container {
         max-width: 700px;
         padding: 15px;
-      }
     }
-      @media (max-width: 480px) {
-      .container {
+}
+
+@media (max-width: 480px) {
+    .container {
         max-width: 100%;
         padding: 10px;
-      }
     }
+}
+
 /**************header**********************************/
 .logo {
     display: flex;
@@ -662,6 +657,7 @@ a.detail2 {
     color: #917a5a;
     font-size: 0.8em;
 }
+
 .audio-player .time {
     font-size: 0.8em;
     color: #ffffff;
@@ -786,7 +782,54 @@ section.book-section .seek {
     gap: 20px;
 }
 
-/************audio-player END*****************/
+
+.healing-inner-pages {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.healing-inner-pages::after {
+    content: "";
+    background-color:
+        color-mix(in srgb, #0f0d07, transparent 50%);
+    position: absolute;
+    inset: 0;
+}
+
+.healing-inner-content {
+    position: relative;
+    z-index: 2;
+    width: 55%;
+}
+
+.healing-inner-content h3,
+.healing-inner-content p {
+    color: #ffffff;
+}
+
+ul.breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 14px;
+    color: #fff;
+    font-size: 0.8em;
+    font-family: var(--font-poppins), sans-serif;
+}
+
+ul.breadcrumbs a {
+    color: #917a5a;
+}
+
+
 /*********************podcast-section************************/
 section.podcast-section {
     position: relative;
@@ -1156,7 +1199,7 @@ section.into-section .wellness-col {
 /********************slider************************/
 .swiper {
     width: 100%;
-    padding: 25px 0!important;
+    padding: 25px 0 !important;
 }
 
 .swiper-slide {
@@ -1221,9 +1264,7 @@ section.into-section .wellness-col {
     margin-bottom: 8px;
 }
 
-.video-box-row p {
-    font-size: 0.7em;
-}
+ 
 
 /************************end slider*****************************/
 /************ABOUT******/
@@ -1596,9 +1637,11 @@ h5.info-title {
     gap: 60px;
     padding: 60px 0;
 }
+
 .podcast-butt h3 {
     color: #fff;
 }
+
 .courses-details-section img {
     border-radius: 10px 10px 10px 10px;
 }
@@ -1613,9 +1656,11 @@ h5.info-title {
 .vertyvery-contents h5 {
     margin: 25px 0px;
 }
+
 .video-sec.playing::after {
-  display: none;
+    display: none;
 }
+
 .box3 {
     background-color: #f8f1ed;
     padding: 40px;
@@ -1849,6 +1894,43 @@ ul.checklist {
     background-color: #f2f1ed;
     padding: 35px 0;
     margin-top: 6px;
+}
+
+
+/*******postcard*********/
+section.postcard {
+    background-color: rgb(241 241 240);
+    padding: 80px 0;
+}
+
+.postcard-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    gap: 35px;
+}
+
+.postcard-item1,
+.postcard-item2 {
+    width: 48%;
+}
+
+.fore-grid {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    display: grid;
+}
+
+.fore-grid-bg {
+    padding: 60px 0;
+    background-color: #e7e5dd;
+}
+
+.fore-grid-bg .wellness-col.bb-1 {
+    background-color: #ffffff;
 }
 
 /*********FAQS***********/
@@ -2258,19 +2340,20 @@ iframe {
     color: #888;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    background: #fff!important;
+.swiper-button-next,
+.swiper-button-prev {
+    background: #fff !important;
     padding: 8px;
     border-radius: 50px;
     top: 40%;
-    width: 50px!important;
-    height: 50px!important;
+    width: 50px !important;
+    height: 50px !important;
     border: 2px solid #C09867;
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    font-size: 17px!important;
+    font-size: 17px !important;
     color: #C09867;
     font-weight: 900;
 }
@@ -3061,7 +3144,7 @@ section.mb-4 {
     min-height: 500px;
 }
 
- /* .section-book-bonus h3 {
+/* .section-book-bonus h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
 } */
@@ -3318,7 +3401,7 @@ h5.tag {
     right: 0;
     width: 20px;
     height: 20px;
-  background-image: url('/images/ins-white.svg'); 
+    background-image: url('/images/ins-white.svg');
     background-repeat: no-repeat;
     bottom: 10px;
     background-size: 20px;
@@ -4502,18 +4585,18 @@ section.sourses-section .right-content h3 {
 
 
 .section-something {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/reaching.jpg') center/cover no-repeat;
-  padding: 60px 40px;
-  align-items: center;
-  justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/images/reaching.jpg') center/cover no-repeat;
+    padding: 60px 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-section h3 {
     max-width: 50em;
     color: #fff;
 }
-.hero-section
- {
+
+.hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/laptop-meeting.jpg') center / cover no-repeat;
     color: #fff;
     text-align: center;
@@ -4521,6 +4604,7 @@ section.sourses-section .right-content h3 {
     position: relative;
     margin-bottom: 50px;
 }
+
 .hero-section p {
     max-width: 43.75em;
     margin: 0 auto 1em;
@@ -4757,7 +4841,7 @@ a.learn-more-link:hover {
     width: 100%;
     height: 100%;
     position: absolute;
-  background: url('/images/offer-badge-bg-color.svg');
+    background: url('/images/offer-badge-bg-color.svg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -5474,9 +5558,9 @@ section.banner {
 
 
 @media (max-width: 1100px) {
-.blog-grid {
-    grid-template-columns: 1fr;
-}
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -5567,10 +5651,10 @@ section.banner {
     .works-sections .right {
         padding-left: 0px;
     }
-.video-boxes
- {
-    width: 25%;
-}
+
+    .video-boxes {
+        width: 25%;
+    }
 
     .left-about,
     .right-about,
@@ -5663,8 +5747,9 @@ section.banner {
 
 @media (max-width: 767px) {
     .bookssection .left-images {
-    height: auto;
-}
+        height: auto;
+    }
+
     body {
         font-size: 13.3px;
     }

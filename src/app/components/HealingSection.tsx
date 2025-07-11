@@ -80,7 +80,7 @@ export default function HealingSection() {
                       He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of
                       a process known as The Worst Day Cycle...
                     </p>
-                    <a className="learn-more-link" href="#">Read more</a>
+                    <a className="learn-more-link" href="/childhood-trauma">Read more</a>
                   </div>
                 </div>
               </div>
