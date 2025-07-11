@@ -88,7 +88,7 @@ export default function page() {
                             <li>Psychology Today, Phoenix Magazine</li>
                             <li>Reader’s Digest</li>
                         </ul>
-                        <a className="button" href="/book-session.html#clendly">Get Started</a>
+                        <a className="button" href="/book-session">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@ export default function page() {
                             me to be like this?” then you may also be wondering, “How do I fix it?”
                         </p>
 
-                        <a href="/meet-kenny.html" className="button">Discover More</a>
+                        <a href="/meet-kenny" className="button">Discover More</a>
                     </div>
 
                     <div className="images">

@@ -4,6 +4,7 @@ import React from 'react';
 import Testimonials from '../components/Testimonials';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import FreeDownloadForm from '../components/FreeDownloadForm';
 
 export default function page() {
   return (
@@ -23,21 +24,7 @@ export default function page() {
                             disconnected from your authentic self. Download
                             it below to get started.</p>
 
-                        <div className="form">
-                        <div className="contact-into" data-aos="fade-up" data-aos-duration="1500">
-                    <h4>Free Download</h4>
-                    <p>The first step to Emotional Authenticity and discovering your Greatness is to reconnect to your
-                        authentic self. Complete this form for instant access.</p>
-                </div>
-                <form>
-                        <div className="row">
-                        
-                            <input type="text" placeholder="Name"/>
-                             <input type="email" placeholder="E-mail Address"/>
-                        </div> 
-                        <button className="button">Download Now</button>
-                        </form>
-                    </div>
+                     <FreeDownloadForm/>
                     </div>
                     <div className="right-wordsendcycal">
                         <img src="images/feelings-Wheel.webp"/>
@@ -64,7 +51,7 @@ export default function page() {
                             disconnected from your authentic self. Download
                             it below to get started.</p>
                         <div className="button-row canter">
-                            <a className="button whitebt" href="#">Enroll
+                            <a className="button whitebt" href="/feelings-wheel">Enroll
                                 now</a>
 
                         </div>
@@ -84,7 +71,7 @@ export default function page() {
                             disconnected from your authentic self. Download
                             it below to get started.</p>
                         <div className="button-row canter">
-                            <a className="button while" href="books.html">Available Now at Barnes
+                            <a className="button while" href="/books">Available Now at Barnes
                                 &amp; Noble</a>
                         </div>
                     </div>

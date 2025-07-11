@@ -20,10 +20,10 @@ export default function Footer() {
                 </form>
 
                <div className="social-icons">
-  <a href="#"><FontAwesomeIcon icon={faFacebookF} /></a>
-  <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-  <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>
-  <a href="#"><FontAwesomeIcon icon={faGooglePlusG} /></a>
+  <a href="/"><FontAwesomeIcon icon={faFacebookF} /></a>
+  <a href="/"><FontAwesomeIcon icon={faInstagram} /></a>
+  <a href="/"><FontAwesomeIcon icon={faXTwitter} /></a>
+  <a href="/"><FontAwesomeIcon icon={faGooglePlusG} /></a>
 </div>
             </div>
 

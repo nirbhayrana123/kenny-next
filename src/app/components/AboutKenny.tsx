@@ -33,9 +33,9 @@ export default function AboutKenny() {
                                     <p>Featured in 100+ speaking events, 10,000+ sessions</p>
                                 </li>
                                 <div className="button-row">
-                                    <a className="button" href="meet-kenny.html">Read Kenny’s Story</a>
-                                    <a className="button" href="book-session.html">Book a Session</a>
-                                    <a className="button" href="courses.html">Enroll now </a>
+                                    <a className="button" href="/meet-kenny">Read Kenny’s Story</a>
+                                    <a className="button" href="/book-session">Book a Session</a>
+                                    <a className="button" href="/courses">Enroll now </a>
                                 </div>
                             </ul>
 

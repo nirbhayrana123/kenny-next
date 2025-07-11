@@ -16,11 +16,9 @@ export default function SelfDevelopment() {
           <h5>Get Instant Access to the Free</h5>
           <h3>Self Development Course</h3>
           <p>
-            Learn about how them you went down prying the wedding
-            ring off his cold, dead finger. I don't know what
-            you did, Fry, but once again, you screwed up!
+            Introducing “Your Journey to Being Yourself” – my new book that’s as hard-hitting as it is transformative.
           </p>
-          <a className="button whitebt" href="feelings-wheel.html">
+          <a className="button whitebt" href="/feelings-wheel">
             Start For Free
           </a>
         </div>

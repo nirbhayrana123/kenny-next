@@ -2056,21 +2056,30 @@ a:hover {
 .form textarea {
     width: 100%;
     padding: 18px;
-    margin-bottom: 25px;
     border: 1px solid #cccccc73;
     border-radius: 5px;
     outline: none;
 }
-
+.flexsocial svg {
+    color: #000;
+}
+.mbres{
+ margin-bottom: 25px;
+ flex: 1;
+}
 .form .row {
     display: flex;
     gap: 10px;
 }
-
+.wordsendsicyel button.button {
+    margin-top: 18px;
+}
 .form .row input {
     flex: 1;
 }
-
+small.error {
+    color: #ff0000;
+}
 .info-box {
     background-color: #c09867;
     color: #fff;
@@ -2461,7 +2470,7 @@ section.bg-colors {
     padding-bottom: 8px;
 }
 
-f .step.active .step-number {
+ .step.active .step-number {
     background-color: #5e7130;
     color: #ffffff;
 }
@@ -2481,7 +2490,27 @@ f .step.active .step-number {
 
 
 
+.cta-box:has(.step.active) {
+    background-color: #917a5a;
+}
 
+.cta-box:has(.step.active) h3,
+.cta-box:has(.step.active) p,
+.cta-box:has(.step.active).cta-box small {
+    color: #ffffff;
+}
+
+.cta-box .step {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.cta-box:has(.step.active) .button {
+    box-shadow: 360px 0 0 0 #ffffff inset;
+    background-color: #ffffff00;
+    border: 1px solid #fff;
+    color: #000000;
+}
 
 .step h4 {
     margin-bottom: 10px;
@@ -5287,7 +5316,7 @@ section.why-choose-us.bookssection .video-boxes {
 }
 
 .wordsendsicyel button.button {
-    margin-top: 0;
+    margin-top: 18px;
 }
 
 /*********************Mobile styles ************************/

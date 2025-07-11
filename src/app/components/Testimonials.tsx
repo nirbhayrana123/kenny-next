@@ -1,4 +1,6 @@
 'use client';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
 const testimonials = [
@@ -6,7 +8,7 @@ const testimonials = [
     name: 'Carolyn Willms',
     role: 'Amy McCollum',
     heading: 'Monday',
-    message: 'Lorem ipsum dolor sit amet consectetur. Massa sed dapibus adipiscing felis at...',
+    message: 'This method of coaching is what was missing. Highly recommend!',
     photo: '/images/15.jpg',
     stars: '/images/star.svg',
     bg: '/images/testimonial-img.svg',
@@ -59,10 +61,10 @@ export default function Testimonials() {
             </h3>
             <div className="testimonial-navigation">
               <button onClick={prevTestimonial}>
-                <i className="fa-solid fa-chevron-left"></i>
+                <FontAwesomeIcon icon={faChevronLeft}/> 
               </button>
               <button onClick={nextTestimonial}>
-                <i className="fa-solid fa-chevron-right"></i>
+                <FontAwesomeIcon icon={faChevronRight}/>
               </button>
             </div>
           </div>

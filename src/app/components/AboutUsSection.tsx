@@ -79,10 +79,10 @@ export default function AboutUsSection() {
                   <p>Featured in 100+ speaking events, 10,000+ sessions</p>
                 </li>
                 <div className="button-row">
-                  <a className="button" href="meet-kenny.html">
+                  <a className="button" href="/meet-kenny">
                     Read Kenny’s Story
                   </a>
-                  <a className="button" href="book-session.html">
+                  <a className="button" href="/book-session">
                     Book a Session
                   </a>
                 </div>

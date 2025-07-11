@@ -1,17 +1,17 @@
 import React from 'react'
 
 export default function SuccessBooks() {
-  return (
-     <section className="why-choose-us bookssection">
+    return (
+        <section className="why-choose-us bookssection">
             <div className="container">
                 <div className="flexchuse" data-aos="fade-up" data-aos-duration="1500">
                     <div className="why-imgds">
                         <div className="left-images">
                             <div className="main-img">
-                                <img src="images/books.webp" alt="Woman on computer"/>
+                                <img src="images/books.webp" alt="Woman on computer" />
                             </div>
                             <div className="video-boxes">
-                                <img src="images/books2.jpg" alt="Video thumbnail"/>
+                                <img src="images/books2.jpg" alt="Video thumbnail" />
                                 <a id="play-video" className="video-play-button" target="_blank"
                                     href="https://youtu.be/a1udGRR63OA?si=D7Iddfp5ezrC8jTJ" data-toggle="modal"
                                     data-target="#savoybeachhotel">
@@ -26,7 +26,7 @@ export default function SuccessBooks() {
                         </h3>
                         <div className="icon-list">
                             <div className="icon-item">
-                                <span className="icon"><img src="images/authentication.png"/></span>
+                                <span className="icon"><img src="images/authentication.png" /></span>
                                 <div>
                                     <span>Your Journey to Being Yourself
                                     </span>
@@ -46,7 +46,7 @@ export default function SuccessBooks() {
                                     at Barnes &amp; Noble</a>
                             </div>
                             <div className="icon-item">
-                                <span className="icon"><img src="images/fight-spirit.png"/></span>
+                                <span className="icon"><img src="images/fight-spirit.png" /></span>
                                 <div>
                                     <span>Your Journey to Success</span>
                                     <p>How to Accept the Answers You Discover Along the Way</p>
@@ -65,9 +65,9 @@ export default function SuccessBooks() {
                         </div>
                     </div>
                 </div>
-               
+
 
             </div>
         </section>
-  )
+    )
 }
