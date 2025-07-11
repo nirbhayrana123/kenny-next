@@ -1,6 +1,9 @@
 'use client';
 
+'use client';
+
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation'; // ✅ NEW
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
@@ -14,18 +17,10 @@ import {
   faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 
-
-
-
-
-
-
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-
-
-
   const [scrolling, setScrolling] = useState(false);
+  const pathname = usePathname(); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,12 +28,12 @@ export default function Header() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // initial call
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <header id="headerbg" className={`header ${scrolling ? 'bgcolor' : ''}`} >
+    <header id="headerbg" className={`header ${scrolling ? 'bgcolor' : ''} ${pathname !== '/' ? 'blacktext' : ''}`}>
       <div className="container">
         <div className={`navbars ${menuOpen ? 'openmenu' : ''}`} id="nav-menu">
           <div className="topbar">
