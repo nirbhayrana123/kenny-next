@@ -33,7 +33,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <header id="headerbg" className={`header ${scrolling ? 'bgcolor' : ''} ${pathname !== '/' ? 'blacktext' : ''}`}>
+    <header id="headerbg"  className={`header ${pathname !== '/' ? 'blacktext' : ''} ${scrolling ? 'bgcolor' : ''}`}>
       <div className="container">
         <div className={`navbars ${menuOpen ? 'openmenu' : ''}`} id="nav-menu">
           <div className="topbar">
