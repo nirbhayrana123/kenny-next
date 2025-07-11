@@ -1,4 +1,6 @@
 "use Client"
+import { faBook, faBrain, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 
 export default function ComboCoursePacks() {
@@ -27,7 +29,7 @@ export default function ComboCoursePacks() {
                         <div className="rbt-feature-feature-style-2">
                             <div className="listver">
                                 <div className="boxlist">
-                                    <i className="fa-regular fa-heart"></i>
+                                    <FontAwesomeIcon icon={faHeart}/> 
                                 </div>
                                 <div className="boxlist-content">
                                     <h5>Begin Your Journey To Emotional Authenticity</h5>
@@ -39,7 +41,7 @@ export default function ComboCoursePacks() {
 
                             <div className="listver">
                                 <div className="boxlist">
-                                    <i className="fa-solid fa-book"></i>
+                                    <FontAwesomeIcon icon={faBook}/> 
                                 </div>
                                 <div className="boxlist-content">
                                     <h5>The Complete Emotional Authenticity Method (one-time Purchase)</h5>
@@ -50,6 +52,7 @@ export default function ComboCoursePacks() {
 
                             <div className="listver">
                                 <div className="boxlist">
+                                    <FontAwesomeIcon icon={faBrain}/>
                                     <i className="fa-solid fa-brain"></i>
                                 </div>
                                 <div className="boxlist-content">
