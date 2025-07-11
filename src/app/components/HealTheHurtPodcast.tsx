@@ -35,11 +35,11 @@ export default function HealTheHurtPodcast() {
                             recovery from it. His experience and knowledge are gifts he bestows upon you for your own
                             healing.
                         </p>
-                        <div className="button-row">
-                            <a href="podcast.html" className="button">See podcast</a>
-                            <a className="button" target="_blank"
-                                href="https://www.barnesandnoble.com/w/book/1144344669?ean=9798218311940">Available Now
-                                at Barnes &amp; Noble</a>
+                       <div className="button-row">
+                            <a className="button" target="_blank" href="https://www.youtube.com/playlist?list=PLOKbwXgOsMo94Ign8iLvv4mEhnGn1lu09">YouTube</a>
+                            <a className="button" target="_blank" href="https://geni.us/KWDywbp">Spotify</a>
+                            <a className="button" target="_blank" href="https://geni.us/UwnW71m">iTunes</a>
+                            <a className="button" target="_blank" href="https://anchor.fm/healthehurtwithkenny">Anchor.fm</a>
                         </div>
                     </div>
 

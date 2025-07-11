@@ -1596,7 +1596,9 @@ h5.info-title {
     gap: 60px;
     padding: 60px 0;
 }
-
+.podcast-butt h3 {
+    color: #fff;
+}
 .courses-details-section img {
     border-radius: 10px 10px 10px 10px;
 }
@@ -1611,7 +1613,9 @@ h5.info-title {
 .vertyvery-contents h5 {
     margin: 25px 0px;
 }
-
+.video-sec.playing::after {
+  display: none;
+}
 .box3 {
     background-color: #f8f1ed;
     padding: 40px;
