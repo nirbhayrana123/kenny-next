@@ -11,7 +11,7 @@ export default function page() {
   return (
     <main className='pt-1'>
 
-      <div className='healing-inner-pages' style={{ backgroundImage: "url('/images/14.jpg')" }}>
+      <div className='healing-inner-pages' style={{ backgroundImage: "url('/images/3.jpg')" }}>
         <div className='healing-inner-content'>
           <h3>Set the boundaries</h3>
           <p>Setting healthy boundaries is an important part of self-care and strong relationships. Boundaries are the limits we set to protect our time, energy, emotions, and personal space.</p>
@@ -94,14 +94,13 @@ Many people struggle to say “no” because they don’t want to hurt others or
       <div className="fore-grid-bg">
         <div className="container">
           <div className='fore-grid'>
-            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/7.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Childhood trauma</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/childhood-trauma">Read more</a></div></div>
+            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/14.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Childhood trauma</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/childhood-trauma">Read more</a></div></div>
 
-            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/15.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Relationship issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/relationship-issues">Read more</a></div></div>
+            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/17.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Relationship issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/relationship-issues">Read more</a></div></div>
 
-            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/add.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Parenting issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/parenting-issues">Read more</a></div></div>
-
-
-            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/8.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Set the boundaries</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/set-boundaries">Read more</a></div></div>
+            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/13.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Parenting issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/parenting-issues">Read more</a></div></div>
+ 
+            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/3.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Set the boundaries</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/set-boundaries">Read more</a></div></div>
 
           </div>
         </div>

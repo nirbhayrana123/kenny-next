@@ -2,7 +2,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation'; // ✅ NEW
+import { usePathname } from 'next/navigation'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
@@ -42,16 +42,16 @@ export default function Header() {
               </a>
 
               <div className="flexsocial whitei">
-                <a href="#" className="sociallink">
+                <a target='black' href="https://www.facebook.com/kennyweiss.net" className="sociallink">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
-                <a href="#" className="sociallink">
+                <a target='black' href="https://twitter.com/kennyweisskw" className="sociallink">
                   <FontAwesomeIcon icon={faXTwitter} />
                 </a>
-                <a href="#" className="sociallink">
+                <a target='black' href="https://www.instagram.com/kennyweiss.kw" className="sociallink">
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
-                <a href="#" className="sociallink">
+                <a target='black' href="https://www.tiktok.com/@kennyweisskw" className="sociallink">
                   <FontAwesomeIcon icon={faTiktok} />
                 </a>
               </div>

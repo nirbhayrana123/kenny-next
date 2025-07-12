@@ -64,10 +64,10 @@ export default function HealingSection() {
         <div className="swiper emotional-swiper">
           <div className="swiper-wrapper">
             {[
-              { img: '/images/7.jpg', title: 'Childhood trauma', url:'/childhood-trauma' },
-              { img: '/images/15.jpg', title: 'Relationship issues', url:'/relationship-issues' },
-              { img: '/images/add.jpg', title: 'Parenting issues', url:'/parenting-issues' },
-              { img: '/images/8.jpg', title: 'Set the boundaries', url:'/set-boundaries' },
+              { img: '/images/14.jpg', title: 'Childhood trauma', url:'/childhood-trauma' },
+              { img: '/images/17.jpg', title: 'Relationship issues', url:'/relationship-issues' },
+              { img: '/images/13.jpg', title: 'Parenting issues', url:'/parenting-issues' },
+              { img: '/images/3.jpg', title: 'Set the boundaries', url:'/set-boundaries' },
             ].map((item, index) => (
               <div className="swiper-slide" key={index}>
                 <div className="wellness-col bb-1">

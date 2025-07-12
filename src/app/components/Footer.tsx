@@ -2,10 +2,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faFacebookF,
+ faFacebookF,
   faInstagram,
   faXTwitter,
-  faGooglePlusG
+  faTiktok,
 } from '@fortawesome/free-brands-svg-icons';
 export default function Footer() {
   return (
@@ -20,10 +20,18 @@ export default function Footer() {
                 </form>
 
                <div className="social-icons">
-  <a href="/"><FontAwesomeIcon icon={faFacebookF} /></a>
-  <a href="/"><FontAwesomeIcon icon={faInstagram} /></a>
-  <a href="/"><FontAwesomeIcon icon={faXTwitter} /></a>
-  <a href="/"><FontAwesomeIcon icon={faGooglePlusG} /></a>
+  <a target='black' href="https://www.facebook.com/kennyweiss.net" className="sociallink">
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </a>
+                <a target='black' href="https://twitter.com/kennyweisskw" className="sociallink">
+                  <FontAwesomeIcon icon={faXTwitter} />
+                </a>
+                <a target='black' href="https://www.instagram.com/kennyweiss.kw" className="sociallink">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a target='black' href="https://www.tiktok.com/@kennyweisskw" className="sociallink">
+                  <FontAwesomeIcon icon={faTiktok} />
+                </a>
 </div>
             </div>
 
