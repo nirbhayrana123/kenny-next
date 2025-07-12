@@ -2553,10 +2553,7 @@ section.bg-colors {
     padding-bottom: 8px;
 }
 
- .step.active .step-number {
-    background-color: #5e7130;
-    color: #ffffff;
-}
+
 
 .step-content {
     background: #fff;
