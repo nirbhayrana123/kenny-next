@@ -60,7 +60,7 @@ export default function page() {
             </div>
             <div className="right-about">
               <div className="about-right-img">
-                <img className="imagedesign" src="/images/kanny2.jpg" alt="" />
+                <img className="imagedesign" src="/images/16.jpg" alt="" />
 
                 <div className="rightdesigncontent">
                   <img src="/images/SVGRepo_icon.svg" alt="" />
@@ -76,16 +76,16 @@ export default function page() {
         <div className="container">
           <div className="postcard-row">
             <div className="postcard-item1">
-              <img src="images/single-image-2.jpg" />
+              <img src="images/5.jpg" />
             </div>
             <div className="postcard-item2">
               <h3>Seeking help from parenting classes, counselors</h3>
               <p>Parenting is one of the most rewarding yet challenging roles in life. Every parent wants the best for their child, but sometimes they face problems that feel overwhelming.
 
-<br /><br />
+                <br /><br />
                 Common parenting issues include managing children’s behavior, balancing work and family time, disagreements between parents about how to raise their child, and dealing with stress and exhaustion. Modern challenges like too much screen time, peer pressure, and academic pressure can also make parenting harder.
 
-</p>
+              </p>
               <a className="button" href="courses.html">Enroll now </a>
             </div>
           </div>
@@ -102,8 +102,8 @@ export default function page() {
             <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/17.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Relationship issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/relationship-issues">Read more</a></div></div>
 
             <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/13.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Parenting issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/parenting-issues">Read more</a></div></div>
- 
-            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/3.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Set the boundaries</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/set-boundaries">Read more</a></div></div>
+
+            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/books.webp" alt="Childhood trauma" /></div><div className="trauma"><h4>Set the boundaries</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/set-boundaries">Read more</a></div></div>
 
           </div>
         </div>

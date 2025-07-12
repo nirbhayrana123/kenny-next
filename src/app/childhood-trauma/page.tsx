@@ -60,7 +60,7 @@ export default function page() {
             </div>
             <div className="right-about">
               <div className="about-right-img">
-                <img className="imagedesign" src="/images/kanny2.jpg" alt="" />
+                <img className="imagedesign" src="/images/kanny2.webp" alt="" />
 
                 <div className="rightdesigncontent">
                   <img src="/images/SVGRepo_icon.svg" alt="" />
@@ -76,7 +76,7 @@ export default function page() {
         <div className="container">
           <div className="postcard-row">
             <div className="postcard-item1">
-              <img src="images/single-image-2.jpg" />
+              <img src="images/book-success.webp" />
             </div>
             <div className="postcard-item2">
               <h3>The effects of childhood trauma can last long into adulthood.</h3>
@@ -98,7 +98,7 @@ export default function page() {
 
             <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/13.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Parenting issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/parenting-issues">Read more</a></div></div>
  
-            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/3.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Set the boundaries</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/set-boundaries">Read more</a></div></div>
+            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/books.webp" alt="Childhood trauma" /></div><div className="trauma"><h4>Set the boundaries</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/set-boundaries">Read more</a></div></div>
 
           </div>
         </div>

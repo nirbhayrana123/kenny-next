@@ -11,7 +11,7 @@ export default function page() {
   return (
     <main className='pt-1'>
 
-      <div className='healing-inner-pages' style={{ backgroundImage: "url('/images/3.jpg')" }}>
+      <div className='healing-inner-pages' style={{ backgroundImage: "url('/images/books.webp')" }}>
         <div className='healing-inner-content'>
           <h3>Set the boundaries</h3>
           <p>Setting healthy boundaries is an important part of self-care and strong relationships. Boundaries are the limits we set to protect our time, energy, emotions, and personal space.</p>
@@ -60,7 +60,7 @@ export default function page() {
             </div>
             <div className="right-about">
               <div className="about-right-img">
-                <img className="imagedesign" src="/images/kanny2.jpg" alt="" />
+                <img className="imagedesign" src="/images/kanny2.webp" alt="" />
 
                 <div className="rightdesigncontent">
                   <img src="/images/SVGRepo_icon.svg" alt="" />
@@ -76,13 +76,13 @@ export default function page() {
         <div className="container">
           <div className="postcard-row">
             <div className="postcard-item1">
-              <img src="images/single-image-2.jpg" />
+              <img src="images/15.jpg" />
             </div>
             <div className="postcard-item2">
               <h3>Good boundaries create respect and balance.</h3>
-              <p>Setting healthy boundaries is an important part of self-care and strong relationships. Boundaries are the limits we set to protect our time, energy, emotions, and personal space.<br/><br/>
+              <p>Setting healthy boundaries is an important part of self-care and strong relationships. Boundaries are the limits we set to protect our time, energy, emotions, and personal space.<br /><br />
 
-Many people struggle to say “no” because they don’t want to hurt others or fear conflict. But without clear boundaries, people can feel stressed, used, or resentful.</p>
+                Many people struggle to say “no” because they don’t want to hurt others or fear conflict. But without clear boundaries, people can feel stressed, used, or resentful.</p>
               <a className="button" href="courses.html">Enroll now </a>
             </div>
           </div>
@@ -99,8 +99,8 @@ Many people struggle to say “no” because they don’t want to hurt others or
             <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/17.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Relationship issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/relationship-issues">Read more</a></div></div>
 
             <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/13.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Parenting issues</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/parenting-issues">Read more</a></div></div>
- 
-            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/3.jpg" alt="Childhood trauma" /></div><div className="trauma"><h4>Set the boundaries</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/set-boundaries">Read more</a></div></div>
+
+            <div className="wellness-col bb-1"><div className="childhoodimg"><img src="/images/books.webp" alt="Childhood trauma" /></div><div className="trauma"><h4>Set the boundaries</h4><p>He is the author of Your Journey to Success, and Your Journey To Being Yourself and the creator of a process known as The Worst Day Cycle...</p><a className="learn-more-link" href="/set-boundaries">Read more</a></div></div>
 
           </div>
         </div>

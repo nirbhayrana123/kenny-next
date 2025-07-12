@@ -44,11 +44,11 @@ header.header.blacktext a.logo-brand img {
     filter: brightness(0) saturate(100%);
 }
 
-.flexsocial.whitei i {
+.flexsocial.whitei svg {
     color: #ffffff;
 }
 
-.header.bgcolor .flexsocial.whitei i {
+.header.bgcolor .flexsocial.whitei svg {
     color: #000000;
 }
 
@@ -126,6 +126,7 @@ img {
     width: 100%;
     max-width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 ul {
@@ -185,8 +186,9 @@ header.header.blacktext ul.navmenu li a {
         padding: 10px;
     }
 }
+ 
+/**************header****************/
 
-/**************header**********************************/
 .logo {
     display: flex;
     align-items: center;
@@ -274,6 +276,7 @@ ul.navmenu {
 button.menu-toggle {
     display: none;
 }
+ 
 
 /*********************/
 .header.bgcolor {
@@ -401,6 +404,10 @@ img.banner-shep {
     border-radius: 100px;
     border: 2px solid #fff;
     object-fit: cover;
+}
+
+.navmenu li a.active {
+    color: #c09867 !important;
 }
 
 .logos-people {
@@ -826,7 +833,8 @@ ul.breadcrumbs {
 }
 
 ul.breadcrumbs a {
-    color: #917a5a;
+    color: #ffd497;
+    font-weight: 900;
 }
 
 
@@ -1264,7 +1272,7 @@ section.into-section .wellness-col {
     margin-bottom: 8px;
 }
 
- 
+
 
 /************************end slider*****************************/
 /************ABOUT******/
@@ -1904,17 +1912,25 @@ section.postcard {
 }
 
 .postcard-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #fff;
-    gap: 35px;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    display: grid;
 }
 
-.postcard-item1,
-.postcard-item2 {
-    width: 48%;
+.postcard-item1 {
+    height: 100%;
 }
+
+.postcard-item2 {
+    padding: 40px;
+}
+
+.postcard-item1 img {
+    height: 100%;
+}
+
 
 .fore-grid {
     grid-template-rows: auto;
@@ -2142,26 +2158,33 @@ a:hover {
     border-radius: 5px;
     outline: none;
 }
+
 .flexsocial svg {
     color: #000;
 }
-.mbres{
- margin-bottom: 25px;
- flex: 1;
+
+.mbres {
+    margin-bottom: 25px;
+    flex: 1;
 }
+
 .form .row {
     display: flex;
     gap: 10px;
 }
+
 .wordsendsicyel button.button {
     margin-top: 18px;
 }
+
 .form .row input {
     flex: 1;
 }
+
 small.error {
     color: #ff0000;
 }
+
 .info-box {
     background-color: #c09867;
     color: #fff;
@@ -2363,7 +2386,10 @@ iframe {
     text-align: center;
     margin-bottom: 40px;
 }
-
+.course-heading.mt3 { 
+    margin-bottom: 90px;
+    margin-top: 40px;
+}
 section.abouts {
     padding-bottom: 100px;
 }
@@ -5403,19 +5429,20 @@ section.why-choose-us.bookssection .video-boxes {
 /*********************Mobile styles ************************/
 
 @media (max-width: 1350px) {
-ul.navmenu { 
-    gap: 20px;
-    width: 54%;  
-}
-ul.navmenu li a {
-    font-size: .6em;
-}
+    ul.navmenu {
+        gap: 20px;
+        width: 54%;
+    }
+
+    ul.navmenu li a {
+        font-size: .6em;
+    }
 
 
-section.banner { 
-    height: auto; 
-    padding: 84px 0px;
-}
+    section.banner {
+        height: auto;
+        padding: 84px 0px;
+    }
 
 }
 
@@ -5700,8 +5727,6 @@ section.banner {
         display: none;
     }
 
-
-
     .panel {
         grid-template-columns: 1fr;
     }
@@ -5729,15 +5754,13 @@ section.banner {
         font-weight: 600;
     }
 
+    .postcard-row {
+        grid-template-columns: 1fr;
+    }
 
-
-
-
-
-
-
-
-
+    .fore-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 
 
 }
@@ -6029,7 +6052,15 @@ section.banner {
         padding: 25px;
     }
 
-
+    .postcard-item2 {
+        padding: 25px;
+    }
+.healing-inner-content {
+    width: 90%;
+}
+    .fore-grid {
+        grid-template-columns: 1fr;
+    }
 
     .boximg.content {
         text-align: center;
@@ -6076,18 +6107,21 @@ section.banner {
 
 
 @media (max-width: 550px) {
-.banner-content h1 { 
-    font-size: 2.5em; 
-}
- .bannerflex {
+    .banner-content h1 {
+        font-size: 2.5em;
+    }
+
+    .bannerflex {
         justify-content: center;
         height: auto;
         text-align: center;
     }
-.logos-people {
-    justify-content: center;
-}
-.button-row {
-    justify-content: center;
-}
+
+    .logos-people {
+        justify-content: center;
+    }
+
+    .button-row {
+        justify-content: center;
+    }
 }

@@ -67,7 +67,7 @@ export default function HealingSection() {
               { img: '/images/14.jpg', title: 'Childhood trauma', url:'/childhood-trauma' },
               { img: '/images/17.jpg', title: 'Relationship issues', url:'/relationship-issues' },
               { img: '/images/13.jpg', title: 'Parenting issues', url:'/parenting-issues' },
-              { img: '/images/3.jpg', title: 'Set the boundaries', url:'/set-boundaries' },
+              { img: '/images/books.webp', title: 'Set the boundaries', url:'/set-boundaries' },
             ].map((item, index) => (
               <div className="swiper-slide" key={index}>
                 <div className="wellness-col bb-1">

@@ -27,7 +27,7 @@ const testimonials = [
     role: 'Therapist',
     heading: 'Powerful Healing',
     message: 'This method of coaching is what was missing. Highly recommend!',
-    photo: '/images/8.jpg',
+    photo: '/images/15.jpg',
     stars: '/images/star.svg',
     bg: '/images/testimonial-img.svg',
   },

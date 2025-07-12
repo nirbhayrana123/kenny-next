@@ -2,7 +2,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation'; 
+import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
@@ -15,11 +15,13 @@ import {
   faXmark,
   faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
+import router from 'next/dist/shared/lib/router/router';
+import Link from 'next/dist/client/link';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  const pathname = usePathname(); 
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +34,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <header id="headerbg"  className={`header ${pathname !== '/' ? 'blacktext' : ''} ${scrolling ? 'bgcolor' : ''}`}>
+    <header id="headerbg" className={`header ${pathname !== '/' ? 'blacktext' : ''} ${scrolling ? 'bgcolor' : ''}`}>
       <div className="container">
         <div className={`navbars ${menuOpen ? 'openmenu' : ''}`} id="nav-menu">
           <div className="topbar">
@@ -41,7 +43,7 @@ export default function Header() {
                 <img src="/images/logo.png" alt="Logo" />
               </a>
 
-              <div className="flexsocial whitei">
+              <div className={`flexsocial ${pathname === '/' ? 'whitei' : ''}`}> 
                 <a target='black' href="https://www.facebook.com/kennyweiss.net" className="sociallink">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </a>
@@ -56,7 +58,7 @@ export default function Header() {
                 </a>
               </div>
             </div>
- 
+
             <button
               className="menu-toggle"
               id="menu-toggle"
@@ -69,54 +71,31 @@ export default function Header() {
               )}
             </button>
           </div>
- 
+
           <ul className="navmenu">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/meet-kenny">Meet Kenny</a>
-            </li>
-            <li>
-              <a href="/courses">Courses</a>
-            </li>
-            <li>
-              <a href="/books">Books</a>
-            </li>
- 
-            <li className="dropreletiv">
-              <a href="#">
-                <span>Free Resources</span>{' '}
-                <FontAwesomeIcon icon={faChevronDown} />
+            <li><Link href="/"className={pathname === "/" ? "active" : ""}>Home</Link></li>
+            <li><Link href="/meet-kenny"className={pathname === "/meet-kenny" ? "active" : ""}>Meet Kenny</Link></li>
+            <li><Link href="/courses"className={pathname === "/courses" ? "active" : ""}>Courses</Link></li>
+            <li> <Link href="/books" className={pathname === "/books" ? "active" : ""} > Books </Link></li>
+
+            <li className="dropreletiv"> <a href="#"><span>Free Resources</span>{' '} <FontAwesomeIcon icon={faChevronDown} />
               </a>
               <ul className="doropmenu">
-                <li>
-                  <a href="/blog">Blog</a>
-                </li>
-                <li>
-                  <a href="/podcast">Podcast</a>
-                </li>
-                <li>
-                  <a href="/feelings-wheel">Feelings Wheel</a>
-                </li>
-                <li>
-                  <a href="/worst-day-cycle">Worst Day Cycle</a>
-                </li>
+                <li> <Link href="/blog" className={pathname === "/blog" ? "active" : ""} >Blog</Link></li>
+                <li> <Link href="/podcast" className={pathname === "/podcast" ? "active" : ""} > Podcast </Link></li>
+                <li> <Link href="/feelings-wheel" className={pathname === "/feelings-wheel" ? "active" : ""} > Feelings Wheel </Link></li>
+                <li> <Link href="/worst-day-cycle" className={pathname === "/worst-day-cycle" ? "active" : ""} > Worst Day Cycle </Link></li>  
               </ul>
             </li>
-
-            <li>
-              <a href="/contact-us">Contact</a>
-            </li>
-            <li>
-              <a className="contact-nav" href="/book-session">
-                Book a Session
-              </a>
-            </li>
+            <li> <Link href="/contact-us" className={pathname === "/contact-us" ? "active" : ""} > Contact</Link></li>   
+            <li><a className="contact-nav" href="/book-session">Book a Session</a></li>
           </ul>
         </div>
       </div>
     </header>
+
+
+
   );
 }
 
