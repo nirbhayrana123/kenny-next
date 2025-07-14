@@ -11,7 +11,7 @@ export default function page() {
   return (
     <main className='pt-1'>
 
-      <div className='healing-inner-pages' style={{ backgroundImage: "url('/images/13.jpg')" }}>
+      <div className='healing-inner-pages' style={{ backgroundImage: "url('./images/13.jpg')" }}>
         <div className='healing-inner-content'>
           <h3>Parenting issues</h3>
           <p>Parenting is one of the most rewarding yet challenging roles in life. Every parent wants the best for their child, but sometimes they face problems that feel overwhelming.</p>

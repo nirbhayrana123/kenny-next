@@ -11,7 +11,7 @@ export default function page() {
   return (
     <main className='pt-1'>
 
-      <div className='healing-inner-pages' style={{ backgroundImage: "url('/images/14.jpg')" }}>
+      <div className='healing-inner-pages' style={{ backgroundImage: "url('./images/14.jpg')" }}>
         <div className='healing-inner-content'>
           <h3>Childhood Trauma</h3>
           <p>Childhood trauma refers to frightening, dangerous, or distressing events that happen during childhood. It can include abuse, neglect, loss of a loved one, domestic violence, bullying, or any situation that makes a child feel unsafe and powerless.</p>

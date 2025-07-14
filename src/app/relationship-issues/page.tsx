@@ -11,7 +11,7 @@ export default function page() {
   return (
     <main className='pt-1'>
 
-      <div className='healing-inner-pages' style={{ backgroundImage: "url('/images/17.jpg')" }}>
+      <div className='healing-inner-pages' style={{ backgroundImage: "url('./images/17.jpg')" }}>
         <div className='healing-inner-content'>
           <h3>Relationship issues</h3>
           <p>Relationships are an important part of life, but they are not always easy. Many people face problems in their relationships with partners, family, or friends. Common relationship issues include lack of communication, trust problems, misunderstandings, jealousy, and different expectations.</p>

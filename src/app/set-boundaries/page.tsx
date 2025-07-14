@@ -11,7 +11,7 @@ export default function page() {
   return (
     <main className='pt-1'>
 
-      <div className='healing-inner-pages' style={{ backgroundImage: "url('/images/books.webp')" }}>
+      <div className='healing-inner-pages' style={{ backgroundImage: "url('./images/books.webp')" }}>
         <div className='healing-inner-content'>
           <h3>Set the boundaries</h3>
           <p>Setting healthy boundaries is an important part of self-care and strong relationships. Boundaries are the limits we set to protect our time, energy, emotions, and personal space.</p>

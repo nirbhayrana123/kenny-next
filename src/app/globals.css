@@ -141,6 +141,14 @@ ul.doropmenu li a {
     padding: 5px 13px;
 }
 
+li.dropreletiv:hover svg {
+    transform: rotate(180deg);
+}
+
+li.dropreletiv svg {
+    transition: 0.5s;
+}
+
 a.logo-brand {
     min-width: 270px;
 }
@@ -186,7 +194,7 @@ header.header.blacktext ul.navmenu li a {
         padding: 10px;
     }
 }
- 
+
 /**************header****************/
 
 .logo {
@@ -276,7 +284,7 @@ ul.navmenu {
 button.menu-toggle {
     display: none;
 }
- 
+
 
 /*********************/
 .header.bgcolor {
@@ -407,7 +415,7 @@ img.banner-shep {
 }
 
 .navmenu li a.active {
-    color: #c09867 !important;
+    color: #917a5a !important;
 }
 
 .logos-people {
@@ -1038,6 +1046,7 @@ section.into-section {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     border-left: 5px solid #c09867;
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 .wellness-header p {
@@ -2386,10 +2395,12 @@ iframe {
     text-align: center;
     margin-bottom: 40px;
 }
-.course-heading.mt3 { 
+
+.course-heading.mt3 {
     margin-bottom: 90px;
     margin-top: 40px;
 }
+
 section.abouts {
     padding-bottom: 100px;
 }
@@ -2427,8 +2438,8 @@ section.abouts {
     font-size: 22px;
     cursor: pointer;
     background-color: #ffffff;
-    color: #c09867;
-    border: 2px solid #c09867;
+    color: #917a5a;
+    border: 2px solid #917a5a;
 }
 
 .testimonial-card {
@@ -2544,8 +2555,10 @@ section.bg-colors {
     background: #c1b7a663;
 }
 
-.step.active p {
+.step.active p,.step.active h4 {
     color: #ffffff;
+    position: relative;
+    z-index: 1;
 }
 
 .step {
@@ -2579,20 +2592,33 @@ section.bg-colors {
     padding-bottom: 8px;
 }
 
-
-
+.step .step-content::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background-color: #8f7959;
+    border-radius: 10px;
+    height: 0%;
+    transition: 1s;
+}
+.step.active .step-content::after { 
+    height: 100%;
+}
 .step-content {
     background: #fff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     transition: 1s all ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.step.active .step-content {
+/* .step.active .step-content {
     background-color: #917a5a;
     color: white;
-}
+} */
 
 
 
@@ -3424,7 +3450,7 @@ h5.tag {
     right: 0;
     width: 20px;
     height: 20px;
-    background-image: url('/images/ins-white.svg');
+    background-image: url('./images/ins-white.svg');
     background-repeat: no-repeat;
     bottom: 10px;
     background-size: 20px;
@@ -4519,7 +4545,7 @@ section.sourses-section .right-content h3 {
 .feature-icon span {
     width: 28px;
     height: 28px;
-    background-color: #c09867;
+    background-color: #917a5a;
     border-radius: 50%;
     color: #fff;
     font-size: 18px;
@@ -5348,6 +5374,7 @@ hr {
     box-shadow: 0 8px 25px rgb(0 0 0 / 15%);
     border-left: 5px solid #c09867;
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
 section.kanny-content {
@@ -6055,9 +6082,11 @@ section.why-choose-us.bookssection .video-boxes {
     .postcard-item2 {
         padding: 25px;
     }
-.healing-inner-content {
-    width: 90%;
-}
+
+    .healing-inner-content {
+        width: 90%;
+    }
+
     .fore-grid {
         grid-template-columns: 1fr;
     }

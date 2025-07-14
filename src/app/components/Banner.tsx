@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Banner() {
   return (
-   <section className="banner" style={{backgroundImage: "url('/images/banner.jpg')"}}>
+   <section className="banner" style={{backgroundImage: "url('./images/banner.jpg')"}}>
             <div className="container">
                 <div className="bannerflex">
                     <div className="banner-content" data-aos="fade-up" data-aos-duration="2000">
